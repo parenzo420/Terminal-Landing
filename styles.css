@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.1rem;
+}
+
+.terminal {
+  white-space: pre-wrap;
+  padding: 10px;
+  max-width: 100vw;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+
+.last-login {
+  font-weight: bold;
+  color: blue;
+}
+
+.output {
+    color: #00ff00;
+    font-weight: bold;
+}
+
+.prompt {
+  color: #00ff00;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  animation: blink 1s step-start infinite;
+  color: #00ff00;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+#input-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#user-input {
+  word-break: break-word;
+}
